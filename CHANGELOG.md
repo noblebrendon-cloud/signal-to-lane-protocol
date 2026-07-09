@@ -1,4 +1,4 @@
-﻿# Changelog
+# Changelog
 
 ## 0.1.0 - 2026-07-09
 
@@ -13,3 +13,11 @@ Includes:
 - AI/operator skill file
 - TikTok religion debate reference example
 - Zenodo-ready metadata
+## 0.1.1 - 2026-07-09
+
+Patch release to fix Zenodo GitHub archiving metadata.
+
+- Rewrote .zenodo.json as UTF-8 without BOM.
+- Changed Zenodo license identifier from MIT to mit.
+- Added access_right and language fields.
+- Updated version metadata.

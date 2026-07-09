@@ -1,4 +1,4 @@
-﻿{
+{
   "title": "Signal-to-Lane Protocol",
   "upload_type": "software",
   "description": "A governed content workflow for turning live platform demand signals into temporary campaigns, testing them in public, and routing proven material back into permanent content-library lanes.",
@@ -7,7 +7,8 @@
       "name": "Coleman, Brendon R."
     }
   ],
-  "license": "MIT",
+  "license": "mit",
+  "access_right": "open",
   "keywords": [
     "content workflow",
     "campaign governance",
@@ -16,6 +17,7 @@
     "content library",
     "routing protocol"
   ],
-  "version": "0.1.0",
-  "publication_date": "2026-07-09"
+  "version": "0.1.1",
+  "publication_date": "2026-07-09",
+  "language": "eng"
 }

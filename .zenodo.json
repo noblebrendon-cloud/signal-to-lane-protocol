@@ -1,23 +1,24 @@
-{
-  "title": "Signal-to-Lane Protocol",
-  "upload_type": "software",
-  "description": "A governed content workflow for turning live platform demand signals into temporary campaigns, testing them in public, and routing proven material back into permanent content-library lanes.",
-  "creators": [
-    {
-      "name": "Coleman, Brendon R."
-    }
-  ],
-  "license": "mit",
-  "access_right": "open",
-  "keywords": [
-    "content workflow",
-    "campaign governance",
-    "creator systems",
-    "platform signal",
-    "content library",
-    "routing protocol"
-  ],
-  "version": "0.1.1",
-  "publication_date": "2026-07-09",
-  "language": "eng"
+﻿{
+    "title":  "Signal-to-Lane Protocol",
+    "upload_type":  "software",
+    "description":  "A governed content workflow for turning live platform demand signals into temporary campaigns, testing them in public, and routing proven material back into permanent content-library lanes.",
+    "creators":  [
+                     {
+                         "name":  "Coleman, Brendon R."
+                     }
+                 ],
+    "license":  "mit",
+    "access_right":  "open",
+    "keywords":  [
+                     "content workflow",
+                     "campaign governance",
+                     "creator systems",
+                     "platform signal",
+                     "content library",
+                     "routing protocol"
+                 ],
+    "version":  "0.1.1",
+    "publication_date":  "2026-07-09",
+    "language":  "eng",
+    "doi":  "10.5281/zenodo.21283345"
 }

@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 ## 0.1.0 - 2026-07-09
 
@@ -21,3 +21,6 @@ Patch release to fix Zenodo GitHub archiving metadata.
 - Changed Zenodo license identifier from MIT to mit.
 - Added access_right and language fields.
 - Updated version metadata.
+## Zenodo DOI
+
+10.5281/zenodo.21283345

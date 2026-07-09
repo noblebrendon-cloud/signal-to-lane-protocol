@@ -58,3 +58,8 @@ This repository includes:
 ## License
 
 MIT License.
+## Citation
+
+Zenodo DOI:
+
+10.5281/zenodo.21283345

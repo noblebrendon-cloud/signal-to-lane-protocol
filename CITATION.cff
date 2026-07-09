@@ -1,0 +1,19 @@
+﻿cff-version: 1.2.0
+title: "Signal-to-Lane Protocol"
+message: "If you use this protocol, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Coleman"
+    given-names: "Brendon R."
+abstract: "A governed content workflow for turning live platform demand signals into temporary campaigns, testing them in public, and routing proven material back into permanent content-library lanes."
+keywords:
+  - content workflow
+  - campaign governance
+  - creator systems
+  - platform signal
+  - content library
+  - routing protocol
+license: MIT
+repository-code: "https://github.com/noblebrendon-cloud/signal-to-lane-protocol"
+version: "0.1.0"
+date-released: "2026-07-09"

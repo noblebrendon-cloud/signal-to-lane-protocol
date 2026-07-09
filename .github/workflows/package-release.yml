@@ -1,0 +1,24 @@
+﻿name: package-release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build release archive
+        run: |
+          mkdir -p dist
+          zip -r dist/signal-to-lane-protocol.zip README.md LICENSE CITATION.cff .zenodo.json docs templates tools skills examples CHANGELOG.md
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: signal-to-lane-protocol
+          path: dist/signal-to-lane-protocol.zip

@@ -1,0 +1,118 @@
+{
+  "schema": "release-reference-v1",
+  "basis": "synthetic",
+  "notice": "Entire record is simulated. Actors, approvals, receipts, and asset digests do not represent a real release. Digest is SHA-256 of the literal synthetic token in asset.source_refs.",
+  "campaign": {
+    "id": "fixture-awkward-but-anointed",
+    "signal_ref": "fixture:audience-request",
+    "purpose": "Test an approved moment as a bounded release",
+    "boundary": "Temporary campaign; permanent lane decision follows observation"
+  },
+  "release": {
+    "id": "fixture-video",
+    "kind": "video",
+    "version": 1
+  },
+  "asset": {
+    "id": "fixture-video-asset-v1",
+    "sha256": "dc3885c7353261d1f0abb50dabbefbde4a4df2417cb5f91ece76b56f5578a958",
+    "source_refs": [
+      "SYNTHETIC video asset; no actual media file exists"
+    ],
+    "transformation": "Simulated derivative of one approved campaign moment",
+    "tool": "fixture construction, not a media renderer",
+    "rights_review_ref": "fixture:human-rights-review"
+  },
+  "packet": {
+    "title": "Awkward But Anointed — simulated reference",
+    "copy": "Synthetic publication copy for evidence testing only.",
+    "spec_ref": "fixture:video-spec-v1"
+  },
+  "target": {
+    "platform": "youtube",
+    "account": "SIMULATED_ACCOUNT",
+    "destination": "https://example.invalid/video/",
+    "visibility": "public"
+  },
+  "version_history": [
+    {
+      "version": 1,
+      "supersedes": null,
+      "asset_sha256": "dc3885c7353261d1f0abb50dabbefbde4a4df2417cb5f91ece76b56f5578a958",
+      "change_note": "Initial synthetic version; no historical artwork implied"
+    }
+  ],
+  "preflight": {
+    "status": "passed",
+    "reviewer": "SIMULATED_OPERATOR",
+    "at": "2026-10-27T10:15:00Z",
+    "evidence_ref": "fixture:preflight",
+    "checks": {
+      "playback_review": true,
+      "audio_and_rights": true,
+      "captions_and_framing": true
+    }
+  },
+  "approvals": [
+    {
+      "gate": "campaign",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:00:00Z",
+      "evidence_ref": "fixture:campaign-approval",
+      "subject_sha256": "b389d45e17b63a6715ff7b8a4197ccfa158771fb6e8d6374b7c5a377628959cc"
+    },
+    {
+      "gate": "production",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:10:00Z",
+      "evidence_ref": "fixture:production-approval",
+      "subject_sha256": "29507e270658870641b05a71d0e44bc87ed94f3976566e25d286480d8c39be11"
+    },
+    {
+      "gate": "publication",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:20:00Z",
+      "evidence_ref": "fixture:publication-approval",
+      "subject_sha256": "b5a0c820287b5be2470c209be96581acfb97f9995d2c0ec15f0ede442e01c7a5"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "fixture-attempt-1",
+      "idempotency_key": "4ef5554573e85ddc51934cfa0fb81474268ca265b5047d822fc7e9477bfd0ba0",
+      "subject_sha256": "b5a0c820287b5be2470c209be96581acfb97f9995d2c0ec15f0ede442e01c7a5",
+      "at": "2026-10-27T10:25:00Z",
+      "outcome": "succeeded",
+      "evidence_ref": "fixture:adapter-response",
+      "remote_id": "fixture-remote-video"
+    }
+  ],
+  "reconciliations": [],
+  "publication": {
+    "status": "verified",
+    "receipt_ref": "fixture:public-receipt",
+    "url": "https://example.invalid/video/",
+    "remote_id": "fixture-remote-video",
+    "verified_by": "SIMULATED_OPERATOR",
+    "verified_at": "2026-10-27T10:30:00Z",
+    "target": {
+      "platform": "youtube",
+      "account": "SIMULATED_ACCOUNT",
+      "destination": "https://example.invalid/video/",
+      "visibility": "public"
+    },
+    "subject_sha256": "b5a0c820287b5be2470c209be96581acfb97f9995d2c0ec15f0ede442e01c7a5",
+    "asset_sha256": "dc3885c7353261d1f0abb50dabbefbde4a4df2417cb5f91ece76b56f5578a958"
+  },
+  "observation": {
+    "status": "pending",
+    "review_due": "2026-11-03T10:30:00Z",
+    "evidence_refs": []
+  },
+  "routing": {
+    "status": "pending"
+  }
+}

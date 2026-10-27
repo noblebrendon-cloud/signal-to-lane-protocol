@@ -1,0 +1,118 @@
+{
+  "schema": "release-reference-v1",
+  "basis": "synthetic",
+  "notice": "Entire record is simulated. Actors, approvals, receipts, and asset digests do not represent a real release. Digest is SHA-256 of the literal synthetic token in asset.source_refs.",
+  "campaign": {
+    "id": "fixture-awkward-but-anointed",
+    "signal_ref": "fixture:audience-request",
+    "purpose": "Test an approved moment as a bounded release",
+    "boundary": "Temporary campaign; permanent lane decision follows observation"
+  },
+  "release": {
+    "id": "fixture-pdf",
+    "kind": "pdf",
+    "version": 1
+  },
+  "asset": {
+    "id": "fixture-pdf-asset-v1",
+    "sha256": "eb6159ef38185d2eb3ddf1a4406a059853f3a9242d871641b74de540ad6e5308",
+    "source_refs": [
+      "SYNTHETIC pdf asset; no actual media file exists"
+    ],
+    "transformation": "Simulated derivative of one approved campaign moment",
+    "tool": "fixture construction, not a media renderer",
+    "rights_review_ref": "fixture:human-rights-review"
+  },
+  "packet": {
+    "title": "Awkward But Anointed — simulated reference",
+    "copy": "Synthetic publication copy for evidence testing only.",
+    "spec_ref": "fixture:pdf-spec-v1"
+  },
+  "target": {
+    "platform": "owned-site-download",
+    "account": "SIMULATED_ACCOUNT",
+    "destination": "https://example.invalid/pdf/",
+    "visibility": "public"
+  },
+  "version_history": [
+    {
+      "version": 1,
+      "supersedes": null,
+      "asset_sha256": "eb6159ef38185d2eb3ddf1a4406a059853f3a9242d871641b74de540ad6e5308",
+      "change_note": "Initial synthetic version; no historical artwork implied"
+    }
+  ],
+  "preflight": {
+    "status": "passed",
+    "reviewer": "SIMULATED_OPERATOR",
+    "at": "2026-10-27T10:15:00Z",
+    "evidence_ref": "fixture:preflight",
+    "checks": {
+      "page_render_review": true,
+      "text_and_links": true,
+      "accessibility_review": true
+    }
+  },
+  "approvals": [
+    {
+      "gate": "campaign",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:00:00Z",
+      "evidence_ref": "fixture:campaign-approval",
+      "subject_sha256": "b389d45e17b63a6715ff7b8a4197ccfa158771fb6e8d6374b7c5a377628959cc"
+    },
+    {
+      "gate": "production",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:10:00Z",
+      "evidence_ref": "fixture:production-approval",
+      "subject_sha256": "2d2b97f485438a8ee20eda2cb0d17bc4d4b4d646d5b9d54659209d2bba9e8314"
+    },
+    {
+      "gate": "publication",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:20:00Z",
+      "evidence_ref": "fixture:publication-approval",
+      "subject_sha256": "f18cf826989f53ad9b31a11cf9f76c3605d92bd34ab026e8f99e4c830b64e520"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "fixture-attempt-1",
+      "idempotency_key": "d98caad57698bd063e89a3c90ec748f8f6a006649069477f40fd924daedac034",
+      "subject_sha256": "f18cf826989f53ad9b31a11cf9f76c3605d92bd34ab026e8f99e4c830b64e520",
+      "at": "2026-10-27T10:25:00Z",
+      "outcome": "succeeded",
+      "evidence_ref": "fixture:adapter-response",
+      "remote_id": "fixture-remote-pdf"
+    }
+  ],
+  "reconciliations": [],
+  "publication": {
+    "status": "verified",
+    "receipt_ref": "fixture:public-receipt",
+    "url": "https://example.invalid/pdf/",
+    "remote_id": "fixture-remote-pdf",
+    "verified_by": "SIMULATED_OPERATOR",
+    "verified_at": "2026-10-27T10:30:00Z",
+    "target": {
+      "platform": "owned-site-download",
+      "account": "SIMULATED_ACCOUNT",
+      "destination": "https://example.invalid/pdf/",
+      "visibility": "public"
+    },
+    "subject_sha256": "f18cf826989f53ad9b31a11cf9f76c3605d92bd34ab026e8f99e4c830b64e520",
+    "asset_sha256": "eb6159ef38185d2eb3ddf1a4406a059853f3a9242d871641b74de540ad6e5308"
+  },
+  "observation": {
+    "status": "pending",
+    "review_due": "2026-11-03T10:30:00Z",
+    "evidence_refs": []
+  },
+  "routing": {
+    "status": "pending"
+  }
+}

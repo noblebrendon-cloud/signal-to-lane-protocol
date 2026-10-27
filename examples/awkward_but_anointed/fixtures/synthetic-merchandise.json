@@ -1,0 +1,118 @@
+{
+  "schema": "release-reference-v1",
+  "basis": "synthetic",
+  "notice": "Entire record is simulated. Actors, approvals, receipts, and asset digests do not represent a real release. Digest is SHA-256 of the literal synthetic token in asset.source_refs.",
+  "campaign": {
+    "id": "fixture-awkward-but-anointed",
+    "signal_ref": "fixture:audience-request",
+    "purpose": "Test an approved moment as a bounded release",
+    "boundary": "Temporary campaign; permanent lane decision follows observation"
+  },
+  "release": {
+    "id": "fixture-merchandise",
+    "kind": "merchandise",
+    "version": 1
+  },
+  "asset": {
+    "id": "fixture-merchandise-asset-v1",
+    "sha256": "58a8c6768e891cc53c633bf5f1579cbdfb1ee1024e29a1c6bbe8535bded62b4d",
+    "source_refs": [
+      "SYNTHETIC merchandise asset; no actual media file exists"
+    ],
+    "transformation": "Simulated derivative of one approved campaign moment",
+    "tool": "fixture construction, not a media renderer",
+    "rights_review_ref": "fixture:human-rights-review"
+  },
+  "packet": {
+    "title": "Awkward But Anointed — simulated reference",
+    "copy": "Synthetic publication copy for evidence testing only.",
+    "spec_ref": "fixture:merchandise-spec-v1"
+  },
+  "target": {
+    "platform": "shopify-online-store",
+    "account": "SIMULATED_ACCOUNT",
+    "destination": "https://example.invalid/merchandise/",
+    "visibility": "public"
+  },
+  "version_history": [
+    {
+      "version": 1,
+      "supersedes": null,
+      "asset_sha256": "58a8c6768e891cc53c633bf5f1579cbdfb1ee1024e29a1c6bbe8535bded62b4d",
+      "change_note": "Initial synthetic version; no historical artwork implied"
+    }
+  ],
+  "preflight": {
+    "status": "passed",
+    "reviewer": "SIMULATED_OPERATOR",
+    "at": "2026-10-27T10:15:00Z",
+    "evidence_ref": "fixture:preflight",
+    "checks": {
+      "print_dimensions": true,
+      "variant_mapping": true,
+      "mockup_review": true
+    }
+  },
+  "approvals": [
+    {
+      "gate": "campaign",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:00:00Z",
+      "evidence_ref": "fixture:campaign-approval",
+      "subject_sha256": "b389d45e17b63a6715ff7b8a4197ccfa158771fb6e8d6374b7c5a377628959cc"
+    },
+    {
+      "gate": "production",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:10:00Z",
+      "evidence_ref": "fixture:production-approval",
+      "subject_sha256": "ea3a813f528ad7d40fa44b298008a22dceee73a99dbdce6f7d79ca88dd0e736e"
+    },
+    {
+      "gate": "publication",
+      "decision": "approved",
+      "actor": "SIMULATED_OPERATOR",
+      "at": "2026-10-27T10:20:00Z",
+      "evidence_ref": "fixture:publication-approval",
+      "subject_sha256": "fa25c78d17d0b4ef08da358350d610167108d413e3f048a6c1e7b8d2d82a6ffa"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "fixture-attempt-1",
+      "idempotency_key": "829b0eebe3f8dee576f82902246875a84a276009a879ea84991cf22b1db4949e",
+      "subject_sha256": "fa25c78d17d0b4ef08da358350d610167108d413e3f048a6c1e7b8d2d82a6ffa",
+      "at": "2026-10-27T10:25:00Z",
+      "outcome": "succeeded",
+      "evidence_ref": "fixture:adapter-response",
+      "remote_id": "fixture-remote-merchandise"
+    }
+  ],
+  "reconciliations": [],
+  "publication": {
+    "status": "verified",
+    "receipt_ref": "fixture:public-receipt",
+    "url": "https://example.invalid/merchandise/",
+    "remote_id": "fixture-remote-merchandise",
+    "verified_by": "SIMULATED_OPERATOR",
+    "verified_at": "2026-10-27T10:30:00Z",
+    "target": {
+      "platform": "shopify-online-store",
+      "account": "SIMULATED_ACCOUNT",
+      "destination": "https://example.invalid/merchandise/",
+      "visibility": "public"
+    },
+    "subject_sha256": "fa25c78d17d0b4ef08da358350d610167108d413e3f048a6c1e7b8d2d82a6ffa",
+    "asset_sha256": "58a8c6768e891cc53c633bf5f1579cbdfb1ee1024e29a1c6bbe8535bded62b4d"
+  },
+  "observation": {
+    "status": "pending",
+    "review_due": "2026-11-03T10:30:00Z",
+    "evidence_refs": []
+  },
+  "routing": {
+    "status": "pending"
+  }
+}

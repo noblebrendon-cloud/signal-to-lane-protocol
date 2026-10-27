@@ -1,0 +1,68 @@
+{
+  "schema": "release-reference-v1",
+  "basis": "historical_reconstruction",
+  "notice": "Owner-confirmed release with incomplete retained evidence. Retrospective IDs below are documentation labels, not original system IDs. No approvals or asset hashes have been invented.",
+  "campaign": {
+    "id": "retrospective-2026-10-17-awkward-but-anointed",
+    "signal_ref": "README.md#historical-source-register",
+    "purpose": "Respond to an audience request with an approved shirt release",
+    "boundary": "Temporary release scenario; permanent lane promotion unverified"
+  },
+  "release": {
+    "id": "retrospective-awkward-shirt",
+    "kind": "merchandise",
+    "version": null
+  },
+  "asset": {
+    "id": "retrospective-final-artwork-unknown",
+    "sha256": null,
+    "source_refs": [
+      "README.md#historical-source-register"
+    ],
+    "transformation": "Prior conversation reports tracing and upscaling; final submitted bytes not recovered",
+    "tool": "Printful Design Lab observed in conversation; Runway use reported by prior assistant",
+    "rights_review_ref": null
+  },
+  "packet": {
+    "title": "Awkward But Anointed",
+    "copy": null,
+    "spec_ref": null
+  },
+  "target": {
+    "platform": "shopify-online-store",
+    "account": "brendonrcoleman.myshopify.com",
+    "destination": null,
+    "visibility": "public"
+  },
+  "version_history": [],
+  "preflight": {
+    "status": "unknown",
+    "reviewer": null,
+    "at": null,
+    "evidence_ref": null,
+    "checks": {}
+  },
+  "approvals": [],
+  "attempts": [],
+  "reconciliations": [],
+  "publication": {
+    "status": "reported",
+    "receipt_ref": null,
+    "url": null,
+    "remote_id": "9593655460097",
+    "verified_by": null,
+    "verified_at": null,
+    "asset_sha256": null,
+    "target": null,
+    "subject_sha256": null,
+    "historical_report_ref": "README.md#historical-source-register"
+  },
+  "observation": {
+    "status": "pending",
+    "review_due": null,
+    "evidence_refs": []
+  },
+  "routing": {
+    "status": "pending"
+  }
+}

@@ -1,5 +1,13 @@
 ﻿# Changelog
 
+## Unreleased
+
+- Add Awkward But Anointed as a second, retrospective reference scenario.
+- Add cross-format approval/evidence fixtures, offline acceptance checks and
+  pinned Signal Agent source probes; distinguish reported history and proposed
+  extensions from verified local behavior.
+- Preserve the core protocol, existing campaign generator and release metadata.
+
 ## 0.1.0 - 2026-07-09
 
 Initial public release.

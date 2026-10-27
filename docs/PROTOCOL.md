@@ -112,3 +112,16 @@ A campaign is complete when one of the following happens:
 3. The signal routes into an existing lane.
 4. The signal proves the need for a new permanent lane.
 5. The campaign is archived with findings.
+
+## Reference Validation Profiles
+
+Reference cases may add explicit human approvals, asset provenance, version
+history, per-target publication receipts and failure-recovery records inside the
+existing campaign folders. These are additive validation profiles; they do not
+change the core stages, required folder scaffold or permanent-lane rule.
+
+The [Awkward But Anointed profile](../examples/awkward_but_anointed/README.md)
+examines an audience-request merchandise release and rehearses the same evidence
+contract for PDFs and videos. It distinguishes owner-reported history, inspected
+source, offline probes and proposed extensions. An exported asset, a local
+`published` flag, or a successful simulated check does not prove a public release.

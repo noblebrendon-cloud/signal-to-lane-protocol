@@ -45,6 +45,20 @@ Campaign name:
 
 Religion Debate Without Losing the Plot
 
+## Second Reference Scenario
+
+[Awkward But Anointed](examples/awkward_but_anointed/README.md) reconstructs the
+October 17, 2026 audience-request-to-merchandise release and compares it with
+Signal Agent's pinned source. The owner-reported human release is distinguished
+from an unverified automated pipeline and from missing historical evidence.
+
+Its offline validation exercises the same approval, provenance, version and
+publication-record structure for merchandise, PDFs and videos. Synthetic records
+are clearly labelled; no product or publication is launched by the tests.
+
+See the [validation runbook](examples/awkward_but_anointed/VALIDATION.md) and
+[capability review](examples/awkward_but_anointed/CAPABILITY_REVIEW.md).
+
 ## Tooling
 
 This repository includes:
